@@ -13,7 +13,7 @@ export async function saveChat(chat: ChatMessage): Promise<void> {
         throw new Error("Auth token not found in localStorage.");
     }
 
-    const response = await fetch(API_ROUTES.SaveChat, {
+    const response = await fetch(API_ROUTES.SAVE_CHAT, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
